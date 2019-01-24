@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- gallery toolbar -->
+        <include layout="@layout/squarecamera__snippet_top_gallerytoolbar" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/galleryImageView"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:scaleType="center" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/multiSelectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:backgroundTint="@android:color/white"
+                android:src="@drawable/ic_collections_black_24dp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="40"
+            android:background="@color/white"
+            android:gravity="bottom">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

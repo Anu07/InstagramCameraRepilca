@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.desmond.squarecamera" >
+
+    <!-- Request permission to use a device camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application android:theme="@style/squarecamera__CameraFullScreenTheme"
+        android:largeHeap="true">
+        <activity
+            android:name=".RuntimePermissionActivity"
+            android:theme="@style/squarecamera__CameraFullScreenTheme.NoUI" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/gridImageView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_action_name" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:background="#80ffffff"
+        android:visibility="gone"
+        android:textColor="@android:color/darker_gray"
+        tools:text="123:00" />
+
+    <ProgressBar
+        android:id="@+id/gridImageProgressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:text="18" />
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:id="@+id/gridImageView"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/ic_action_name" />
+
+    <ProgressBar
+        android:id="@+id/gridImageProgressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        tools:text="18" />
+</FrameLayout>

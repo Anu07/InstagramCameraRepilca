@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/thumb_background_color">
+
+    <TextView android:id="@+id/filterTitle"
+        tools:text="filter"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:paddingLeft="@dimen/thumbnail_horizontal_padding"
+        android:paddingRight="@dimen/thumbnail_horizontal_padding"/>
+
+</LinearLayout>

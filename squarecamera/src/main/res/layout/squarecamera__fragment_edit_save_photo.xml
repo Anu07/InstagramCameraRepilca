@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.desmond.squarecamera.EditSavePhotoFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- gallery toolbar -->
+        <include layout="@layout/squarecamera__snippet_top_gallerytoolbar" />
+
+    </RelativeLayout>
+
+    <com.desmond.squarecamera.SquareImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/topView"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <ImageView android:id="@+id/place_holder_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:visibility="gone"
+        android:layout_below="@+id/topView"
+        android:layout_marginTop="30dp"
+        android:background="@color/black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/imgViewList"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topView"
+            android:layout_above="@+id/filtersView"
+            android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/filtersView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/thumbnails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
